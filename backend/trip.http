@@ -1,0 +1,50 @@
+POST http://localhost:4100/trips
+Content-Type: application/json
+
+{
+    "trip_name": "Amazing Trips",
+    "image": "image-url.jpg",
+    "location": "Exotic Island",
+    "duration": "7",
+    "start_date": "2024-03-01",
+    "end_date": "2024-03-08",
+    "category": "Adventure",
+    "description": "A wonderful adventure trip to an exotic island.",
+    "price": "1100"
+}
+
+
+### get all trip
+
+GET http://localhost:4100/trips
+Content-Type: application/json
+ token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWRkNzFmNDgtZWE0NC00OGMzLWJlYmEtMTNhZDJiMzIwYzM5IiwibmFtZSI6IkRhbmllbCBrIiwiZW1haWwiOiJnYW1lc215MTc3QGdtYWlsLmNvbSIsIm5hdGlvbmFsSWQiOiIxOTA4MjM5IiwicGhvbmVOdW1iZXIiOiIxMzgyLTMwNi03ODA5MCIsImRhdGVPZkJpcnRoIjoiMTk5MC0wMS0wMVQwMDowMDowMC4wMDBaIiwiZ2VuZGVyIjoiTWFsZSIsIm5hdGlvbmFsaXR5IjoiQ291bnRyeSIsIm9jY3VwYXRpb24iOiJEZXZlbG9wZXIiLCJpc1dlbGNvbWUiOmZhbHNlLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNzA4NTgyNjI3LCJleHAiOjE3MDg1ODYyMjd9.nPCGr-7zvpySRf21OJ0nXpViC49HMLkNBqzxIT-jaZA
+### get 1 trip by id
+
+GET http://localhost:4100/trips/16a8d2ad-d96c-44ed-9961-53a1aa11fdc8
+Content-Type: application/json
+ token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWRkNzFmNDgtZWE0NC00OGMzLWJlYmEtMTNhZDJiMzIwYzM5IiwibmFtZSI6IkRhbmllbCBrIiwiZW1haWwiOiJnYW1lc215MTc3QGdtYWlsLmNvbSIsIm5hdGlvbmFsSWQiOiIxOTA4MjM5IiwicGhvbmVOdW1iZXIiOiIxMzgyLTMwNi03ODA5MCIsImRhdGVPZkJpcnRoIjoiMTk5MC0wMS0wMVQwMDowMDowMC4wMDBaIiwiZ2VuZGVyIjoiTWFsZSIsIm5hdGlvbmFsaXR5IjoiQ291bnRyeSIsIm9jY3VwYXRpb24iOiJEZXZlbG9wZXIiLCJpc1dlbGNvbWUiOmZhbHNlLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNzA4NTgyNjI3LCJleHAiOjE3MDg1ODYyMjd9.nPCGr-7zvpySRf21OJ0nXpViC49HMLkNBqzxIT-jaZA
+
+
+### update trip
+
+PUT http://localhost:4100/trips/update/16a8d2ad-d96c-44ed-9961-53a1aa11fdc8
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWRkNzFmNDgtZWE0NC00OGMzLWJlYmEtMTNhZDJiMzIwYzM5IiwibmFtZSI6IkRhbmllbCBrIiwiZW1haWwiOiJnYW1lc215MTc3QGdtYWlsLmNvbSIsIm5hdGlvbmFsSWQiOiIxOTA4MjM5IiwicGhvbmVOdW1iZXIiOiIxMzgyLTMwNi03ODA5MCIsImRhdGVPZkJpcnRoIjoiMTk5MC0wMS0wMVQwMDowMDowMC4wMDBaIiwiZ2VuZGVyIjoiTWFsZSIsIm5hdGlvbmFsaXR5IjoiQ291bnRyeSIsIm9jY3VwYXRpb24iOiJEZXZlbG9wZXIiLCJpc1dlbGNvbWUiOmZhbHNlLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNzA4NTgyNjI3LCJleHAiOjE3MDg1ODYyMjd9.nPCGr-7zvpySRf21OJ0nXpViC49HMLkNBqzxIT-jaZA
+
+{
+    "trip_name": "Amg Trps",
+    "image": "imae-ul.jpg",
+    "location": "Exic Island",
+    "duration": "3",
+    "start_date": "2024-03-01",
+    "end_date": "2024-03-08",
+    "category": "Adventure",
+    "description": "A wonderful adventure trip to an exotic island.",
+    "price": "1100"
+}
+
+
+### delete a user
+DELETE http://localhost:4100/trips/delete/16a8d2ad-d96c-44ed-9961-53a1aa11fdc8
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWRkNzFmNDgtZWE0NC00OGMzLWJlYmEtMTNhZDJiMzIwYzM5IiwibmFtZSI6IkRhbmllbCBrIiwiZW1haWwiOiJnYW1lc215MTc3QGdtYWlsLmNvbSIsIm5hdGlvbmFsSWQiOiIxOTA4MjM5IiwicGhvbmVOdW1iZXIiOiIxMzgyLTMwNi03ODA5MCIsImRhdGVPZkJpcnRoIjoiMTk5MC0wMS0wMVQwMDowMDowMC4wMDBaIiwiZ2VuZGVyIjoiTWFsZSIsIm5hdGlvbmFsaXR5IjoiQ291bnRyeSIsIm9jY3VwYXRpb24iOiJEZXZlbG9wZXIiLCJpc1dlbGNvbWUiOmZhbHNlLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNzA4NTgyNjI3LCJleHAiOjE3MDg1ODYyMjd9.nPCGr-7zvpySRf21OJ0nXpViC49HMLkNBqzxIT-jaZA

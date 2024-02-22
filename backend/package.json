@@ -1,0 +1,34 @@
+{
+  "name": "xplora",
+  "version": "1.0.0",
+  "description": "xplora management system- for tour",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:build": "tsc -w",
+    "start:run": "nodemon dist/server.js",
+    "start": "concurrently npm:start:*"
+  },
+  "author": "jackson",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.21",
+    "@types/joi": "^17.2.3",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/mssql": "^9.1.5",
+    "bcrypt": "^5.1.1",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "joi": "^17.12.1",
+    "jsonwebtoken": "^9.0.2",
+    "mssql": "^10.0.2",
+    "nodemon": "^3.0.3",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.8"
+  }
+}

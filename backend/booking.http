@@ -1,0 +1,20 @@
+POST http://localhost:4100/booking
+Content-Type: application/json
+
+{
+    "national_id": "12456789",
+    "start_date": "2024-03-01",
+    "end_date": "2024-03-08",
+    "no_of_participants": "2",
+    "trip_id": "your_trip_id_here",
+    "is_cancelled": false
+}
+
+### get all trip
+
+GET http://localhost:4100/booking
+Content-Type: application/json
+
+### get 1 booking
+GET http://localhost:4100/trips/2988aa36-fa4f-411a-b654-75b94962e12b
+Content-Type: application/json
